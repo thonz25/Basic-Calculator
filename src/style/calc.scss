@@ -1,0 +1,92 @@
+$primaryColorBG: #060709;
+$secondaryColorBg: #363e3c;
+$primaryNumColor: #dfdede;
+$btnBgColor: #5d5f63;
+$secondaryNumColor: #bdbec0;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Digital-7", sans-serif;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 18rem;
+  background-color: $primaryColorBG;
+  border-radius: 0.8rem;
+  border: none;
+
+  // calculator screen
+  .equation-container {
+    height: 12rem;
+    width: 100%;
+    padding: 1em 2em 1em;
+    span {
+      text-align: right;
+      position: relative;
+      top: 2rem;
+    }
+    .equation {
+      display: block;
+      width: 100%;
+      height: 20%;
+      color: $secondaryNumColor;
+      font-size: 1.3rem;
+      text-align: right;
+    }
+    .total {
+      color: $secondaryNumColor;
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.5;
+      width: 100%;
+      text-align: right;
+    }
+    .darkMode {
+      background-color: $secondaryColorBg;
+      width: 5rem;
+      height: 1.5rem;
+      display: block;
+      margin: 0 auto;
+      border-radius: 0.9rem;
+    }
+  }
+}
+// button container
+.btn-container {
+  background-color: $btnBgColor;
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+
+  .flex-group {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button {
+    width: 3.2rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $secondaryNumColor;
+    background-color: $secondaryColorBg;
+    cursor: pointer;
+  }
+}
+.flex2 {
+  flex: 0.7;
+}
+input {
+  border: none;
+}

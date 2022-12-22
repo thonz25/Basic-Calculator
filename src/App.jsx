@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./style/_calc.scss";
+import "./style/calc.scss";
 
 function App() {
   const [input, setInput] = useState("");
